@@ -127,6 +127,9 @@ ${PROJECT_NAME} src/robot_info_class.cpp
 add_library(
 agv_${PROJECT_NAME} src/agv_robot_info_class.cpp
 )
+add_library(
+hydraulic_system_monitor src/hydraulic_system_monitor.cpp
+)
 
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
@@ -161,6 +164,7 @@ target_link_libraries(${PROJECT_NAME}_node
 target_link_libraries(agv_${PROJECT_NAME}_node
 	robot_info
 	agv_robot_info
+	hydraulic_system_monitor
   	${catkin_LIBRARIES}
 )
 
