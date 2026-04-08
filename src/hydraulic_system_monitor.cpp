@@ -14,14 +14,14 @@ const std::string &HydraulicSystemMonitor::getHydraulicOilPressure() const {
 }
 
 void HydraulicSystemMonitor::setHydraulicOilTemperature(
-    const std::string temperature) {
+    const std::string &temperature) {
   this->hydraulic_oil_temperature = temperature;
 }
 void HydraulicSystemMonitor::setHydraulicOilTankFillLevel(
-    const std::string tankFillLevel) {
+    const std::string &tankFillLevel) {
   this->hydraulic_oil_tank_fill_level = tankFillLevel;
 }
 void HydraulicSystemMonitor::setHydraulicOilPressure(
-    const std::string pressure) {
+    const std::string &pressure) {
   this->hydraulic_oil_pressure = pressure;
 }
